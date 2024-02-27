@@ -11,3 +11,80 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  display: flex;
+}
+
+.App button{
+  width: 100px;
+  height: 100px;
+}
+
+.todo-wrapper{
+  width: 700px;
+  border: 1px solid black;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.todo-interactive{
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-interactive input{
+  width: 70%;
+  height: 35px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.todo-interactive button{
+  width: 28%;
+  height: 35px;
+  background: lightgreen;
+  border: none;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.todo-list{
+  margin: 20px 0 20px 0;
+}
+
+.todo{
+  width: 50%;
+  height: 40px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  padding: 10px;
+  margin: 5px 0 0 0;
+  position: relative;
+}
+
+.todo h5{
+  margin: 0 0 0 10px;
+}
+
+.todo button{
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 10px;
+  font-size: 10px;
+  background: red;
+  border: none;
+}
+
+h5.ended{
+  text-decoration: line-through;
+}
